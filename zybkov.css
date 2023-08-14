@@ -1,0 +1,157 @@
+button#selectAnswer:before {
+    font: normal normal normal 18px/1 "Material Design Icons";
+    content: '\f9ec';
+    width: 25px;
+}
+button#selectAnswer {
+    border: 1px solid transparent;
+    border-color: #c72a2a #9c2121 #9c2121 #c72a2a;
+}
+.button.button--icon--preview>.button-text:before, a.button.button--icon--preview>.button-text:before {
+	font-size: large;
+}
+button.u-jsOnly.button.button--icon.button--icon--preview {
+    display: none;
+}
+button#xf-preview-shilkin {
+    background: #ff000000;
+    margin-block-end: -5px;
+}
+button#xf-preview-shilkin:before {
+    content: '\f208';
+    color: #e0e6f0;
+    font: normal normal normal 18px/1 "Material Design Icons";
+    margin-top: -1px;
+}
+div#select_prefix {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #c72a2a;
+}
+.button.button--primary.panelButton {
+    width: 213px;
+    background: #22242b;
+    border: 1px solid transparent;
+    border-color: inherit;
+    margin: 5px;
+}
+.button.button--primary.panelButton:hover {
+    background: #31333a;
+}
+.button.button--link.menuButton {
+    color: #e0e6f0;
+	border: 1px solid transparent;
+    border-color: #c72a2a #9c2121 #9c2121 #c72a2a;
+    width: 172.4px;
+}
+.button.button--link.menuButton:before {
+    width: 21px;
+    font: normal normal normal 18px/1 "Material Design Icons";
+    content: "\f32a";
+    font-weight: 900;
+	background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    -webkit-background-clip: text;
+    background-clip: text;
+  	-webkit-text-fill-color: transparent;
+    background-size: 1800% 1800%;
+    animation: AnimNic 18s ease infinite;
+    border: 20px;
+    border-color: #000;
+}
+
+.button.button--primary.type-one {
+    background: none;
+    border: 2px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 94%;
+}
+
+.button.button--primary.type-two {
+    background: none;
+    border-bottom: 2px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    width: 95%;
+}
+
+.button.button--primary.type-three {
+    background: none;
+    border: 3px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 93.6%;
+    height: 0px;
+}
+
+.button.button--primary.type-four {
+    background: none;
+    border: 3px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 94.6%;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.button.button--primary.type-four:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.button.button--primary.type-four:active {
+    color: #000
+}
+
+.button.button--primary.type-four:active:after {
+    background: transparent;
+}
+
+.button.button--primary.type-four:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #22242b;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* KeyFrames */
+
+@keyframes AnimNic { 
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
